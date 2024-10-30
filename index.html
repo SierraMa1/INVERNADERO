@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css">
+    <title> Invernadero Virtual</title>
+
+</head>
+
+<body>
+    
+    
+    
+
+        <div id="fondo">
+            <div id="topeInvernadero"></div>
+            <audio id="musica1" controls loop>
+                <source src="multi/audio/ambient.mp3" autoplay>
+            </audio>
+            <!--botones-->
+            <div id="controles">
+                <button id="boton1" type="button"> Iniciar </button>
+                <button id="boton2" type="button"> Replantar </button>
+
+                <!--Desplegable plantas, da opcion para selecionar una planta.-->
+
+                <select id="numeroPlantas">
+                    <option value="0"> Seleccione numero de Plantas </option>
+                    <option value="1"> Uno </option>
+                    <option value="2"> Dos </option>
+                    <option value="3"> Tres </option>
+                    <option value="4"> Cuatro </option>
+                    <option value="5"> Cinco </option>
+                    <option value="6"> Seis </option>
+                </select>
+
+            </div>
+            <div id="plantas"></div>
+
+            <div id="tabla">
+                <h2>Tabla de Flores</h2>
+
+                <table id="tablaFlores">
+                    <thead>
+                        <tr>
+                            <th>Orden de llegada al techo</th>
+                            <th>Flor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="index.js"></script>
+
+
+</html>
